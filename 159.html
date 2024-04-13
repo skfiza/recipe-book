@@ -1,0 +1,76 @@
+  HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Major Historical Events</h1>
+    </header>
+
+    <main>
+        <div id="event-list">
+            <h2>Years of Major Events</h2>
+            <ul>
+                <li><a href="#" onclick="showEvent(2001)">2001</a></li>
+                <li><a href="#" onclick="showEvent(1789)">1789</a></li>
+                <li><a href="#" onclick="showEvent(1945)">1945</a></li>
+                <!-- Add more years here -->
+            </ul>
+        </div>
+
+        <div id="event-details" style="display:none;">
+            <h2 id="event-year"></h2>
+            <p id="event-description"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+CSS:
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#event-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#event-list li {
+    margin-bottom: 10px;
+}
+
+#event-list a {
+    text-decoration: none;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+#event-list a:hover {
+    text-decoration: underline;
+}
+
+#event-details {
+    margin-top: 20px;
+}
+
